@@ -89,7 +89,7 @@
 			<div class="main-purple description padding col-md-6 flex">
 				<div class="column center">
 					<h1>moodtunes</h1>
-					<p><strong>Initially completed in 2015</strong></p>
+					<p><strong>Completed in 2015, updated in 2018</strong></p>
 					<p>kreg-art.com is a site created to showcase and promote the artwork of Victoria based artist Kreg Zembal.</p>
 					<p>In addition to designing and coding the site, I also created thumbnails and favicon assets based on Kreg's work.
 					<p><strong>Built with:</strong> HTML5, CSS3, Javascript/jQuery, PHP, SQL, Photoshop, Illustrator.
@@ -98,19 +98,34 @@
 			</div>
 			<div class="secondary-purple image padding col-md-6 flex">
 				<div class="center">
-					<img src="assets/images/kregart.png">
+					<img src="assets/images/moodtunes.png">
 				</div>
 			</div>
 		</div>
 </section>
 <script>
 jQuery(document).ready(function ($) { 
-	//SET CONTENT HEIGHT SO SECTION IS 100VH (-120 ACCOUNTS FOR PADDING)//
-	//$contentHeight = $(window).height()-$(".title").height()-120;
-	//alert($contentHeight);
-	//$(".content").height($contentHeight);
-	 $(document).ready(function(){
-		$('.slider').bxSlider();
+
+	//SET CONTENT HEIGHT HEIGHT SO SECTION IS 100VH (-120 ACCOUNTS FOR PADDING)//
+	$contentHeight = $(window).height()-$(".title").height()-120;
+
+	//CHECK WIDTH FUNCTION:SETS HEIGHT OF PORTFOLIO SLIDER//
+	function checkWidth() {
+		if ($(window).width() >= 992) {
+			$(".portfolio-item").height($contentHeight);
+		} else {
+			$(".portfolio-item").height("auto");
+		}
+	}	
+	checkWidth();
+	
+	//INITIATE BXSLIDER//
+	$('.slider').bxSlider();
+	
+	//WINDOW RESIZE FUNCTION//
+	$(window).resize(function() {
+		$contentHeight = $(window).height()-$(".title").height()-120;
+		checkWidth();
 	});
 });
 </script>
