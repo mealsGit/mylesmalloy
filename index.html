@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Myles Malloy's Portfolio</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--BOOTSTRAP CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
+<!--BOOTSTRAP JAVASCRIPT-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--BXSLIDER-->
+<link rel="stylesheet" href="css/bxslider-styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!--CUSTOM CSS-->
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+<section id="landing" class="padding">
+	<div class="main-purple flex-desktop">
+		<div class="column padding">
+		<img src="assets/images/meals.png">
+		<h1>Hello, I’m <strong>Myles Malloy</strong></h1>
+		<p>I like to <a href="#specs">design</a> and <a href="#specs">build</a> websites from scratch, and I also have <a href="#specs">skills</a> in media editing and illustration.</p>
+		<p>Scroll down to find out more about <a href="#specs">languages/technologies</a> I use, see my <a href="#portfolio">portfolio</a>, or <a href="#contact">get in touch</a>.</p>
+		</div>
+	</div>
+</section>
+<section id="specs" class="with-title flex-desktop padding container">
+	<div class="title">
+	<div>
+		<h2>Languages and Web Technologies I Use</h2>
+		</div>
+	</div>
+	<div class="content">
+		<div id="webdev" class="secondary-purple padding col-sm-6 flex">
+			<div class="center fullwide">
+				<h3><strong>Web Development</strong></h3>
+				<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>SCSS/SASS</li>
+				<li>Javascript/jQuery</li>
+				<li>PHP</li>
+				<li>SQL</li>
+				<li>Wordpress</li>
+				<li>Drupal</li>
+				</ul>
+			</div>
+		</div>
+		<div id="media" class="tertiary-purple padding col-sm-6 flex">
+			<div class="center fullwide">
+			<h3><strong>Other Media</strong></h3>
+			<ul>
+				<li>Adobe Illustrator</li>
+				<li>Adobe Photoshop</li>
+				<li>Adobe Premiere</li>
+				<li>Logic</li>
+				<li>Garageband</li>
+				<li>Mixcraft</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="portfolio" class="with-title padding">
+	<h2>My Portfolio</h2>
+	<section id="portfolio-wrap" class="slider">
+		<div class="portfolio-item">
+			<div class="main-purple description padding col-md-6 flex">
+				<div class="column center">
+					<h1>kreg-art.com</h1>
+					<p><strong>Completed in 2018</strong></p>
+					<p>kreg-art.com is a site created to showcase and promote the artwork of Victoria based artist Kreg Zembal.</p>
+					<p>In addition to designing and coding the site, I also created thumbnails and favicon assets based on Kreg's work.
+					<p><strong>Built with:</strong> HTML5, CSS3, Javascript/jQuery, PHP, SQL, Photoshop, Illustrator.
+					<p><a href="http://kreg-art.com/">View kreg-art.com</a></p>
+				</div>
+			</div>
+			<div class="secondary-purple image padding col-md-6 flex">
+				<div class="center">
+					<img src="assets/images/kregart.png">
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-item">
+			<div class="main-purple description padding col-md-6 flex">
+				<div class="column center">
+					<h1>moodtunes</h1>
+					<p><strong>Initially completed in 2015</strong></p>
+					<p>kreg-art.com is a site created to showcase and promote the artwork of Victoria based artist Kreg Zembal.</p>
+					<p>In addition to designing and coding the site, I also created thumbnails and favicon assets based on Kreg's work.
+					<p><strong>Built with:</strong> HTML5, CSS3, Javascript/jQuery, PHP, SQL, Photoshop, Illustrator.
+					<p><a href="http://kreg-art.com/">View moodtunes</a></p>
+				</div>
+			</div>
+			<div class="secondary-purple image padding col-md-6 flex">
+				<div class="center">
+					<img src="assets/images/kregart.png">
+				</div>
+			</div>
+		</div>
+</section>
+<script>
+jQuery(document).ready(function ($) { 
+	//SET CONTENT HEIGHT SO SECTION IS 100VH (-120 ACCOUNTS FOR PADDING)//
+	//$contentHeight = $(window).height()-$(".title").height()-120;
+	//alert($contentHeight);
+	//$(".content").height($contentHeight);
+	 $(document).ready(function(){
+		$('.slider').bxSlider();
+	});
+});
+</script>
+</body>
+
+</html>
