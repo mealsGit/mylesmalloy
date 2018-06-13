@@ -21,17 +21,17 @@
 <section id="landing" class="padding">
 	<div class="main-purple flex-desktop">
 		<div class="column padding">
-		<img src="assets/images/meals.png">
-		<h1>Hello, I’m <strong>Myles Malloy</strong></h1>
-		<p>I like to <a href="#specs">design</a> and <a href="#specs">build</a> websites from scratch, and I also have <a href="#specs">skills</a> in media editing and illustration.</p>
-		<p>Scroll down to find out more about <a href="#specs">languages/technologies</a> I use, see my <a href="#portfolio">portfolio</a>, or <a href="#contact">get in touch</a>.</p>
+			<img src="assets/images/meals.png">
+			<h1><span>Hello,<br>I’m <strong>Myles Malloy</strong></h1>
+			<p>I like to <a href="#specs">design</a> and <a href="#specs">build</a> <strong>responsive, cross-browser, SEO optimized</strong> websites from scratch, and I also have <a href="#specs">skills</a> in media editing and illustration.</p>
+			<p>Scroll down to find out more about <a href="#specs">languages/technologies</a> I use, see my <a href="#portfolio">portfolio</a>, or <a href="#contact">contact me</a>.</p>
 		</div>
 	</div>
 </section>
 <section id="specs" class="with-title flex-desktop padding container">
 	<div class="title">
-	<div>
-		<h2>Languages and Web Technologies I Use</h2>
+		<div>
+			<h2>What I use</h2>
 		</div>
 	</div>
 	<div class="content">
@@ -69,23 +69,29 @@
 	<h2>My Portfolio</h2>
 	<section id="portfolio-wrap" class="slider">
 		<div class="portfolio-item">
-			<div class="main-purple description padding col-md-6 flex">
+			<div class="main-purple image padding col-md-6 flex">
+				<div class="center">
+					<img src="assets/images/kregart.png">
+				</div>
+			</div>
+			<div class="secondary-purple description padding col-md-6 flex">
 				<div class="column center">
 					<h1>kreg-art.com</h1>
 					<p><strong>Completed in 2018</strong></p>
 					<p>kreg-art.com is a site created to showcase and promote the artwork of Victoria based artist Kreg Zembal.</p>
 					<p>In addition to designing and coding the site, I also created thumbnails and favicon assets based on Kreg's work.
 					<p><strong>Built with:</strong> HTML5, CSS3, Javascript/jQuery, PHP, SQL, Photoshop, Illustrator.
+					<p><a href="">View screenshots</a></p>
 					<p><a href="http://kreg-art.com/">View kreg-art.com</a></p>
 				</div>
 			</div>
-			<div class="secondary-purple image padding col-md-6 flex">
+		</div>
+		<div class="portfolio-item">	
+			<div class="tertiary-purple image padding col-md-6 flex">
 				<div class="center">
-					<img src="assets/images/kregart.png">
+					<img src="assets/images/moodtunes.png">
 				</div>
 			</div>
-		</div>
-		<div class="portfolio-item">
 			<div class="main-purple description padding col-md-6 flex">
 				<div class="column center">
 					<h1>moodtunes</h1>
@@ -93,21 +99,30 @@
 					<p>kreg-art.com is a site created to showcase and promote the artwork of Victoria based artist Kreg Zembal.</p>
 					<p>In addition to designing and coding the site, I also created thumbnails and favicon assets based on Kreg's work.
 					<p><strong>Built with:</strong> HTML5, CSS3, Javascript/jQuery, PHP, SQL, Photoshop, Illustrator.
+					<p><a href="">View screenshots</a></p>
 					<p><a href="http://kreg-art.com/">View moodtunes</a></p>
 				</div>
 			</div>
-			<div class="secondary-purple image padding col-md-6 flex">
-				<div class="center">
-					<img src="assets/images/moodtunes.png">
-				</div>
-			</div>
 		</div>
+	</section>
+</section>
+<section id="contact" class="padding">
+	<div class="main-purple flex-desktop">		
+		<div class="column center padding">
+			<h1>Let's get in touch</h1>
+			<p>Send me an email at <a href="mailto:mealsmalloy@gmail.com">mealsmalloy@gmail.com</a> to inquire about my services.</p> 
+			<p>Please allow for up to a 24 hour response time.</p>
+			<p>Thanks for coming by!</p>
+			<p><a href="#spec">Back to What I Use</a></p>
+			<p><a href="#portfolio">Back to Portfolio</a></p>
+		</div>
+	</div>
 </section>
 <script>
 jQuery(document).ready(function ($) { 
 
 	//SET CONTENT HEIGHT HEIGHT SO SECTION IS 100VH (-120 ACCOUNTS FOR PADDING)//
-	$contentHeight = $(window).height()-$(".title").height()-120;
+	$contentHeight = $(window).height()-$(".title").height()-80;
 
 	//CHECK WIDTH FUNCTION:SETS HEIGHT OF PORTFOLIO SLIDER//
 	function checkWidth() {
@@ -118,6 +133,12 @@ jQuery(document).ready(function ($) {
 		}
 	}	
 	checkWidth();
+	
+	//INITIAL ANIMATION//
+	
+	$("#landing h1").addClass("show");
+	
+	setTimeout(function() {$("#landing p").css("opacity", "1");}, 1000)
 	
 	//INITIATE BXSLIDER//
 	$('.slider').bxSlider();
