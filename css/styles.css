@@ -1,1 +1,248 @@
-*{padding:0;margin:0;box-sizing:border-box;font-family:Arial, sans-serif}h2,h3{margin:0 0 20px 0}h1,h3,p,ul li{color:#fff !important}h1{margin:20px 0}#landing h1{opacity:0;transition:.8s;position:relative;right:100px}#landing h1.show{opacity:1;right:0}#landing p{opacity:0;transition:.8s}h2{color:#111;border-bottom:1px solid #111;width:100%}ul{margin-bottom:0 !important}a{background-color:#ff1f8a !important;color:#111 !important;padding:2px}ul{list-style-type:none}.main-purple{background:#ab0bff}.secondary-purple{background:#a73afc}.tertiary-purple{background:#b748ff}.padding{padding:20px}.flex{display:flex}.center{align-self:center}.fullwide{width:100%}.left{float:left}.right{float:right}.image img{width:100%;max-width:800px}section:not(.with-title)>div{height:100%}div.column{width:100%;max-width:480px;margin:0 auto}section#landing img{width:100%;max-width:300px;display:block;margin:0 auto}section#specs{position:relative}section#portfolio{position:relative}section#portfolio .portfolio-item .center{margin:0 auto}div.title{margin-bottom:20px;padding:0 20px}div.content{width:100%}#webdev,#media{text-align:center}@media all and (max-width: 767px){h1,h2{font-size:30px}h3{font-size:20px}li,p{font-size:15px}}@media all and (min-width: 768px){h1{font-size:50px}h2{font-size:30px !important}h3{font-size:25px}li,p{font-size:20px}.half{width:49.5%}div.title{padding:0 40px}.padding{padding:40px}section#specs .content{display:flex}}@media all and (min-width: 992px){.portfolio-item{display:flex}}@media all and (min-height: 750px){section:not(.slider){height:100vh}.flex-desktop{display:flex}.flex-desktop>div{align-self:center}div.title{position:absolute;top:0;left:0;right:0}}
+/* line 5, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* line 11, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+h2, h3 {
+  margin: 0 0 20px 0;
+}
+
+/* line 14, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+h1, h3, p, ul li {
+  color: #fff !important;
+}
+
+/* line 17, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+h1 {
+  margin: 20px 0;
+}
+
+/* line 20, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+#landing h1 {
+  opacity: 0;
+  transition: .8s;
+  position: relative;
+  right: 100px;
+}
+
+/* line 26, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+#landing h1.show {
+  opacity: 1;
+  right: 0;
+}
+
+/* line 30, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+#landing p {
+  opacity: 0;
+  transition: .8s;
+}
+
+/* line 34, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+h2 {
+  color: #111;
+  border-bottom: 1px solid #111;
+  width: 100%;
+}
+
+/* line 39, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+a {
+  background-color: #ff1f8a !important;
+  color: #111 !important;
+  padding: 2px;
+}
+
+/* line 44, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.main-purple {
+  background: #ab0bff;
+}
+
+/* line 47, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.secondary-purple {
+  background: #a73afc;
+}
+
+/* line 50, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.tertiary-purple {
+  background: #b748ff;
+}
+
+/* line 53, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.padding {
+  padding: 20px;
+}
+
+/* line 56, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.flex {
+  display: flex;
+}
+
+/* line 59, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.center {
+  align-self: center;
+}
+
+/* line 62, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.fullwide {
+  width: 100%;
+}
+
+/* line 65, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.left {
+  float: left;
+}
+
+/* line 68, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.right {
+  float: right;
+}
+
+/* line 71, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+.image img {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* line 75, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+section:not(.with-title) > div {
+  height: 100%;
+}
+
+/* line 78, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+div.column {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* line 83, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+section#landing img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 89, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+section#specs {
+  position: relative;
+}
+
+/* line 92, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+section#specs #webdev h3, section#specs #media h3 {
+  text-align: center;
+}
+
+/* line 96, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+section#specs img {
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 104, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+section#portfolio {
+  position: relative;
+}
+
+/* line 106, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+section#portfolio .portfolio-item .center {
+  margin: 0 auto;
+}
+
+/* line 110, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+div.title {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+/* line 114, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+div.content {
+  width: 100%;
+}
+
+@media all and (max-width: 767px) {
+  /* line 122, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  h1, h2 {
+    font-size: 30px;
+  }
+  /* line 125, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  h3 {
+    font-size: 20px;
+  }
+  /* line 128, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  p {
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  /* line 134, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  h1 {
+    font-size: 50px;
+  }
+  /* line 137, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  h2 {
+    font-size: 30px !important;
+  }
+  /* line 140, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  h3 {
+    font-size: 25px;
+  }
+  /* line 143, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  p {
+    font-size: 18px;
+  }
+  /* line 146, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  .half {
+    width: 49.5%;
+  }
+  /* line 149, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  div.title {
+    padding: 0 40px;
+  }
+  /* line 152, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  .padding {
+    padding: 40px;
+  }
+  /* line 156, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  section#specs .content {
+    display: flex;
+  }
+}
+
+@media all and (min-width: 992px) {
+  /* line 163, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  .portfolio-item {
+    display: flex;
+  }
+}
+
+@media all and (min-height: 750px) {
+  /* line 169, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  section:not(.slider) {
+    height: 100vh;
+  }
+  /* line 172, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  .flex-desktop {
+    display: flex;
+  }
+  /* line 175, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  .flex-desktop > div {
+    align-self: center;
+  }
+  /* line 178, C:/Users/Redias/Documents/mylesmalloy/scss/styles.scss */
+  div.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=../css/styles.map */
