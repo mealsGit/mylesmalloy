@@ -41,6 +41,22 @@ a {
 	color:#111!important;
 	padding:2px;
 }
+nav {
+	position:fixed;
+	height:100vh;
+	width:100vw;
+	background:hsla(279, 100%, 52%, 0.85);
+	z-index:2;
+	display:none;
+	opacity:0;
+	transition:.8s;
+	ul {
+		text-align:center;
+		li {
+			font-size:50px;
+		}
+	}
+}
 .main-purple {
 	background: $main-purple;
 }
@@ -61,6 +77,9 @@ a {
 }
 .fullwide {
 	width:100%;
+}
+.fullheight {
+	height:100%;
 }
 .left {
 	float:left;
@@ -109,10 +128,16 @@ section#portfolio {
 }
 div.title {
 	margin-bottom:20px;
-	padding:0 20px;
 }
 div.content {
 	width:100%;
+}
+#hamburger, #closex {
+	position:fixed;
+	top:0;
+	right:0;
+	border:none;
+	padding:0;
 }
 
 
@@ -143,14 +168,12 @@ div.content {
 	p {
 		font-size:18px;
 	}
-	.half {
-		width:49.5%;
-	}
-	div.title {
-		padding:0 40px;
-	}
 	.padding {
 		padding:40px;
+	}
+	div.title {
+		padding:0;
+		top:40px;
 	}
 	section#specs {
 		.content {
@@ -160,12 +183,15 @@ div.content {
 }
 
 @media all and (min-width: 992px) {
+	nav ul li {
+		font-size:80px;
+	}
 	.portfolio-item {
 		display:flex;
 	}
 }
 
-@media all and (min-height:750px) {
+@media all and (min-height:750px) and (min-width:992px) {
 	section:not(.slider) {
 		height:100vh;
 	}
@@ -177,7 +203,8 @@ div.content {
 	}
 	div.title {
 		position:absolute;
-		top:0;
+		padding:0 40px;
+		top:40px;
 		left:0;
 		right:0;
 	}

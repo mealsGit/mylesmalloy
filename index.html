@@ -18,50 +18,28 @@
 </head>
 
 <body>
+<a id="hamburger">
+	<img src="assets/images/hamburger.gif" alt="Hamburger">
+</a>
+<nav>
+	<a id="closex">
+		<img src="assets/images/close-x.gif" alt="Close">
+	</a>
+	<div class="flex fullheight">
+		<ul class="center fullwide">
+			<li><a href="#portfolio">My Portfolio</a></li>
+			<li><a href="#specs">What I Use</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+	</div>
+</nav>
 <section id="landing" class="padding">
 	<div class="main-purple flex-desktop">
 		<div class="column padding">
 			<img src="assets/images/meals.png">
 			<h1><span>Hello,<br>I’m <strong>Myles Malloy</strong></h1>
 			<p>I like to <a href="#specs">design</a> and <a href="#specs">build</a> <strong>responsive, cross-browser, SEO optimized</strong> websites from scratch, and I also have <a href="#specs">skills</a> in media editing and illustration.</p>
-			<p>Scroll down to find out more about <a href="#specs">languages/technologies</a> I use, see my <a href="#portfolio">portfolio</a>, or <a href="#contact">contact me</a>.</p>
-		</div>
-	</div>
-</section>
-<section id="specs" class="with-title flex-desktop padding container">
-	<div class="title">
-		<div>
-			<h2>What I use</h2>
-		</div>
-	</div>
-	<div class="content">
-		<div id="webdev" class="secondary-purple padding col-sm-6 flex">
-			<div class="center fullwide">
-				<h3><strong>Web Development</strong></h3>
-				<ul>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>SCSS/SASS</li>
-				<li>Javascript/jQuery</li>
-				<li>PHP</li>
-				<li>SQL</li>
-				<li>Wordpress</li>
-				<li>Drupal</li>
-				</ul>
-			</div>
-		</div>
-		<div id="media" class="tertiary-purple padding col-sm-6 flex">
-			<div class="center fullwide">
-			<h3><strong>Other Media</strong></h3>
-			<ul>
-				<li>Adobe Illustrator</li>
-				<li>Adobe Photoshop</li>
-				<li>Adobe Premiere</li>
-				<li>Logic</li>
-				<li>Garageband</li>
-				<li>Mixcraft</li>
-			</ul>
-			</div>
+			<p>Scroll down to see my <a href="#portfolio">portfolio</a>,find out more about <a href="#specs">languages/technologies I use</a>, or <a href="#contact">contact me</a>.</p>
 		</div>
 	</div>
 </section>
@@ -95,56 +73,101 @@
 			<div class="main-purple description padding col-md-6 flex">
 				<div class="column center">
 					<h1>moodtunes</h1>
-					<p><strong>Completed in 2015, updated in 2018</strong></p>
-					<p>kreg-art.com is a site created to showcase and promote the artwork of Victoria based artist Kreg Zembal.</p>
-					<p>In addition to designing and coding the site, I also created thumbnails and favicon assets based on Kreg's work.
-					<p><strong>Built with:</strong> HTML5, CSS3, Javascript/jQuery, PHP, SQL, Photoshop, Illustrator.
+					<p><strong>Completed in 2014, updated in 2018</strong></p>
+					<p>Moodtunes is a web app I created as a school project that plays small bits of my own music based on criteria selected from a form submission.
+					<p>I recently went back in 2018 to add some "quality of life" improvements like allowing users to select as many or as few musical attributes as desired before submitting the form, as well as updating the visual elements to be more sleek.</p>
+					<p><strong>Built with:</strong> HTML5, CSS3, Javascript/jQuery, PHP, SQL, Illustrator, Garageband.
 					<p><a href="">View screenshots</a></p>
-					<p><a href="http://kreg-art.com/">View moodtunes</a></p>
+					<p><a href="">View moodtunes</a></p>
 				</div>
 			</div>
 		</div>
 	</section>
 </section>
+<section id="specs" class="with-title flex-desktop padding">
+	<div class="title">
+		<div>
+			<h2>What I use</h2>
+		</div>
+	</div>
+	<div class="content">
+		<div id="webdev" class="secondary-purple padding col-sm-6 flex">
+			<div class="column center fullwide">
+				<img src="assets/images/monitor2.gif" alt="Computer monitor icon">
+				<h3><strong>Web Development</strong></h3>
+				<p>Listed below are the main languages, web technologies and CMSs I use regularly or have used in some capacity previously on web projects.</p>
+				<p><strong>HTML5, CSS3, SASS, Javascript/jQuery, SQL, PHP, Bootsrap, Wordpress, Drupal, D2L.</strong></p>
+			</div>
+		</div>
+		<div id="media" class="tertiary-purple padding col-sm-6 flex">
+			<div class="column center fullwide">
+			<img src="assets/images/media2.gif" alt="Media icon">	
+			<h3><strong>Other Media</strong></h3>
+			<p>I have used the following applications for non-web-specific projects involving tasks such as illustrating, media manipulation, video editing, and audio production.</p>	
+			<p><strong>Adobe Illustrator, Adobe Photoshop, Adobe Premiere, Logic, Garageband, Mixcraft.</strong></p>
+			</div>
+		</div>
+	</div>
+</section>
 <section id="contact" class="padding">
 	<div class="main-purple flex-desktop">		
 		<div class="column center padding">
 			<h1>Let's get in touch</h1>
-			<p>Send me an email at <a href="mailto:mealsmalloy@gmail.com">mealsmalloy@gmail.com</a> to inquire about my services.</p> 
+			<p>If you need someone to design and/or build your website, provide digital illustrations, or edit your media, send me an email at <a href="mailto:mealsmalloy@gmail.com">mealsmalloy@gmail.com</a> to inquire about my services.</p> 
 			<p>Please allow for up to a 24 hour response time.</p>
 			<p>Thanks for coming by!</p>
-			<p><a href="#spec">Back to What I Use</a></p>
+			<p><a href="#specs">Back to What I Use</a></p>
 			<p><a href="#portfolio">Back to Portfolio</a></p>
 		</div>
 	</div>
 </section>
 <script>
 jQuery(document).ready(function ($) { 
-	//SET CONTENT HEIGHT HEIGHT SO SECTION IS 100VH (-120 ACCOUNTS FOR PADDING)//
+	//SET CONTENT HEIGHT HEIGHT SO SECTION IS 100VH (-80 ACCOUNTS FOR PADDING)//
 	$contentHeight = $(window).height()-$(".title").height()-80;
 	//CHECK WIDTH FUNCTION:SETS HEIGHT OF PORTFOLIO SLIDER//
-	function checkWidth() {
-		if ($(window).width() >= 992) {
+	function checkDimensions() {
+		if ($(window).width() >= 992 && $(window).height() >= 750) {
 			$(".portfolio-item").height($contentHeight);
 		} else {
 			$(".portfolio-item").height("auto");
 		}
 	}	
-	checkWidth();
+	checkDimensions();
 	
 	//INITIAL ANIMATION//
 	
 	$("#landing h1").addClass("show");
 	
-	setTimeout(function() {$("#landing p").css("opacity", "1");}, 1000)
+	setTimeout(function() {$("#landing p").css("opacity", "1");}, 1000);
+	
+	//NAV BUTTON FUNCTIONALITY//
+	
+	function hideNav(){	
+		$("nav").css("opacity","0");
+		setTimeout(function() {$("nav").css("display","none");},1000);
+	}
+	
+	$("#hamburger").click(function(){
+		$("nav").css("display","block");
+		setTimeout(function() {$("nav").css("opacity","1");},100);
+	});
+	
+	$("#closex").click(function(){
+		hideNav();
+	});
+	
+	$("nav li a").click(function(){
+		hideNav();
+	});
 	
 	//INITIATE BXSLIDER//
-	$('.slider').bxSlider();
+	$('.slider').bxSlider();	
 	
 	//WINDOW RESIZE FUNCTION//
 	$(window).resize(function() {
-		$contentHeight = $(window).height()-$(".title").height()-120;
-		checkWidth();
+		$contentHeight = $(window).height()-$(".title").height()-80;
+		checkDimensions();
 	});
 });
 </script>
