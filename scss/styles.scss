@@ -36,16 +36,10 @@ h2 {
 	border-bottom:1px solid #111;
 	width:100%;
 }
-ul {
-	margin-bottom:0!important;
-}
 a {
 	background-color:#ff1f8a!important;
 	color:#111!important;
 	padding:2px;
-}
-ul {
-	list-style-type:none;
 }
 .main-purple {
 	background: $main-purple;
@@ -94,6 +88,18 @@ section#landing img {
 }
 section#specs {
 	position:relative;
+	#webdev, #media {
+		h3 {
+			text-align:center;
+		}
+	}
+	img {
+		width:100%;
+		max-width:200px;
+		padding-bottom:20px;
+		margin:0 auto;
+		display:block;
+	}
 }
 section#portfolio {
 	position:relative;
@@ -108,9 +114,6 @@ div.title {
 div.content {
 	width:100%;
 }
-#webdev, #media {
-	text-align:center;
-}
 
 
 //BOOTSTRAP BREAKPOINTS (WIDTH)//
@@ -122,7 +125,7 @@ div.content {
 	h3 {
 		font-size:20px;
 	}
-	li, p {
+	p {
 		font-size:15px;
 	}
 }
@@ -137,8 +140,8 @@ div.content {
 	h3 {
 		font-size:25px;
 	}
-	li,p {
-		font-size:20px;
+	p {
+		font-size:18px;
 	}
 	.half {
 		width:49.5%;
