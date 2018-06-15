@@ -52,7 +52,7 @@ nav {
 	width:100vw;
 	/*background:hsla(279, 100%, 52%, 0.85);*/
 	background:rgba(216, 255, 10, 0.85);
-	z-index:2;
+	z-index:3;
 	display:none;
 	opacity:0;
 	transition:.8s;
@@ -97,7 +97,7 @@ nav {
 	width:100%;
 	max-width:800px;
 }
-section:not(.with-title) > div {
+section > div {
 	height:100%;
 }
 div.column {
@@ -132,12 +132,6 @@ section#portfolio {
 		margin:0 auto;
 	}
 }
-div.title {
-	margin-bottom:20px;
-}
-div.content {
-	width:100%;
-}
 #hamburger, #closex {
 	position:fixed;
 	top:0;
@@ -152,7 +146,7 @@ div.content {
 
 //BOOTSTRAP BREAKPOINTS (WIDTH)//
 
-@media all and (max-width: 767px) {  
+@media all and (max-width: 767px) {
 	h1, h2 {
 		font-size:30px;
 	}
@@ -185,7 +179,7 @@ div.content {
 		top:40px;
 	}
 	section#specs {
-		.content {
+		#content {
 			display:flex;
 		}
 	}

@@ -53,6 +53,9 @@ ul.bxslider {
   color: #666;
   padding-top: 20px;
 }
+.bx-wrapper .bx-pager.bx-default-pager {
+	z-index:1;
+}
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: #666;
   text-indent: -9999px;
