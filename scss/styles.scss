@@ -93,6 +93,9 @@ nav {
 .right {
 	float:right;
 }
+.bx-wrapper .bx-controls-direction a  {
+	bottom:0;
+}
 .image img{
 	width:100%;
 	max-width:800px;
@@ -174,6 +177,9 @@ section#portfolio {
 	.padding {
 		padding:40px;
 	}
+	.bx-wrapper .bx-controls-direction a {
+		bottom:50%!important;
+	}
 	div.title {
 		padding:0;
 		top:40px;
@@ -212,5 +218,6 @@ section#portfolio {
 		right:0;
 	}
 }
+
 
 
