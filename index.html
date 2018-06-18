@@ -249,36 +249,37 @@ jQuery(document).ready(function ($) {
 	//INITIATE BXSLIDER//
 	var slider;
 
+	var active;
+	
+	active = false;
+	
 	function createSlider() {
 		slider = $('.slider').bxSlider({
 		hideControlOnEnd: true,
 		pager: false
 		});
 	}
-	//if ($(window).width()>=768) {
-		//$('.slider').bxSlider();	
+	if ($(window).width()>=992) {
 		createSlider();
-	//}
+		active = true;
+	}
 	
 	$(".bx-next").append("<?xml version='1.0' encoding='utf-8'?><svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 400 400' style='enable-background:new 0 0 400 400;' xml:space='preserve'><style type='text/css'>.st1{fill:none;stroke:#111111;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;transition:.3s;}</style><polyline class='st1' points='119.8,71 280.2,200.4 119.8,329 '/></svg>");
 	
 	$(".bx-prev").append("<?xml version='1.0' encoding='utf-8'?><svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 400 400' style='enable-background:new 0 0 400 400;' xml:space='preserve'><style type='text/css'>.st1{fill:none;stroke:#111111;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;transition:.3s;}</style><path class='st0' d='M280.2,341.5c3.7,0,7.3-1.6,9.8-4.7c4.3-5.4,3.4-13.3-1.9-17.6L139.7,200.4L288.1,80.8c5.4-4.3,6.2-12.2,1.9-17.6c-4.3-5.4-12.2-6.2-17.6-1.9L111.9,190.7c-2.9,2.4-4.7,6-4.7,9.7c0,3.8,1.7,7.4,4.7,9.7l160.4,128.5C274.7,340.6,277.5,341.5,280.2,341.5z'/></svg>");
-	
-	//var active
-	
-	//active = false;
+
 	
 	//WINDOW RESIZE FUNCTION//
 	$(window).resize(function() {
 		$contentHeight = $(window).height()-134;
 		checkDimensions();
-		/*if ($(window).width()<=767) {
+		if ($(window).width()<=991 && active == true) {
 			slider.destroySlider();
-			active = true;
-		} else if ($(window).width()>=768 && active == true) {
-			createSlider();
 			active = false;
-		}*/
+		} else if ($(window).width()>=992 && active == false) {
+			createSlider();
+			active = true;
+		}
 	});
 	
 	$(document).scroll(function(){

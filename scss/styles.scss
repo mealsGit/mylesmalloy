@@ -150,6 +150,9 @@ section#specs {
 }
 section#portfolio {
 	position:relative;
+	.portfolio-item:not(:last-of-type) {
+		margin-bottom:40px;
+	}	
 	.portfolio-item .center {
 		margin:0 auto;
 	}
@@ -178,16 +181,14 @@ section#portfolio {
 	p {
 		font-size:15px;
 	}
-	section#portfolio {
-		.portfolio-item:not(:last-of-type) {
-			/*margin-bottom:20px;*/
-		}
-	}
 	section#specs img {
 		max-width:125px;
 	}
 	.bx-wrapper .bx-controls-direction a{
 		opacity:.6;
+	}
+	.portfolio-item:not(:last-of-type) {
+		margin-bottom:20px!important;
 	}
 }
 
@@ -231,6 +232,9 @@ section#portfolio {
 	}
 	.portfolio-item {
 		display:flex;
+	}
+	.portfolio-item:not(:last-of-type) {
+		margin-bottom:0;
 	}
 }
 
