@@ -36,11 +36,13 @@ h2 {
 	border-bottom:1px solid #111;
 	width:100%;
 }
-a {
+a, .btn {
 	background-color:#ff1f8a!important;
 	color:#111!important;
 	padding:2px;
 	transition:.2s;
+	border-radius:0;
+	border:none;
 }
 a:hover {
 	background-color:rgb(216, 255, 10)!important;
@@ -94,7 +96,16 @@ nav {
 	float:right;
 }
 .bx-wrapper .bx-controls-direction a  {
-	bottom:0;
+	bottom:50%;
+}
+.bx-controls-direction a:hover {
+	opacity:1;
+}
+.bx-wrapper .bx-prev {
+	left: -20px;
+}
+.bx-wrapper .bx-next {
+	right: -20px;
 }
 .image img{
 	width:100%;
@@ -127,6 +138,14 @@ section#specs {
 		padding-bottom:20px;
 		margin:0 auto;
 		display:block;
+		opacity:0;
+		transition:.8s;
+		position:relative;
+		bottom:100px;
+	}
+	img.show {
+		bottom:0;
+		opacity:1;
 	}
 }
 section#portfolio {
@@ -141,11 +160,10 @@ section#portfolio {
 	right:0;
 	border:none;
 	padding:0;
-	z-index:2;
+	z-index:3;
 	width:40px;
 	height:40px;
 }
-
 
 //BOOTSTRAP BREAKPOINTS (WIDTH)//
 
@@ -155,9 +173,21 @@ section#portfolio {
 	}
 	h3 {
 		font-size:20px;
+		margin-top:0;
 	}
 	p {
 		font-size:15px;
+	}
+	section#portfolio {
+		.portfolio-item:not(:last-of-type) {
+			/*margin-bottom:20px;*/
+		}
+	}
+	section#specs img {
+		max-width:125px;
+	}
+	.bx-wrapper .bx-controls-direction a{
+		opacity:.6;
 	}
 }
 
@@ -177,8 +207,11 @@ section#portfolio {
 	.padding {
 		padding:40px;
 	}
-	.bx-wrapper .bx-controls-direction a {
-		bottom:50%!important;
+	.bx-wrapper .bx-prev {
+		left: -40px;
+	}
+	.bx-wrapper .bx-next {
+		right: -40px;
 	}
 	div.title {
 		padding:0;
@@ -189,6 +222,7 @@ section#portfolio {
 			display:flex;
 		}
 	}
+	
 }
 
 @media all and (min-width: 992px) {

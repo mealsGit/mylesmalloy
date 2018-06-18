@@ -88,21 +88,21 @@ ul.bxslider {
 .bx-wrapper .bx-prev, .bx-wrapper .bx-next {
 	background-size:contain;
 	background-repeat:no-repeat;
-	border-radius:50%;
+	/*border-radius:50%;*/
 	z-index:2!important;
 	font-size:0;
 }
 .bx-wrapper .bx-prev {
-  /*background-image:url("../assets/images/left-arrow.svg");*/
-  left: 10px;
+  background-image:url("../assets/images/left-arrow.svg");
+  /*left: -40px;*/
 }
 /*.bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
   background-position: 0 0;
 }*/
 .bx-wrapper .bx-next {
-  /*background-image:url("../assets/images/right-arrow.svg");*/
-  right: 10px;
+  background-image:url("../assets/images/right-arrow.svg");
+  /*right: -40px;*/
 }
 /*.bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
