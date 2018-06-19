@@ -2,7 +2,7 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Myles Malloy's Portfolio</title>
-
+<!--JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--BOOTSTRAP CSS-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="css/bxslider-styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!--LIGHTBOX-->
+<link href="css/lightbox.css" rel="stylesheet">
 <!--CUSTOM CSS-->
 <link rel="stylesheet" href="css/styles.css">
 
@@ -105,8 +107,12 @@
 					<p>kreg-art.com is a site created to showcase and promote the artwork of Victoria based artist Kreg Zembal.</p>
 					<p>In addition to designing and coding the site, I also created thumbnails and favicon assets based on Kreg's work.
 					<p><strong>Built with:</strong> HTML5, CSS3, Javascript/jQuery, PHP, SQL, Bootstrap, Photoshop, Illustrator.
-					<p><a href="">View screenshots</a></p>
+					<p><a href="assets/images/screenshots/kregart-screenshots/kregart-menu.jpg" data-lightbox="kregart" data-title="This info about Kreg is shown after clicking the top-right menu button.">View screenshots</a></p>
 					<p><a href="http://kreg-art.com/">View kreg-art.com</a></p>
+					<div class="hidden">
+						<a href="assets/images/screenshots/kregart-screenshots/kregart-menu-mobile.jpg" data-title="More info about Kreg section on a mobile device." data-lightbox="kregart"></a>
+						<a href="assets/images/screenshots/kregart-screenshots/kregart-tablet.jpg" data-title="A tablet layout with landscape (horizontal) screen orientation." data-lightbox="kregart"></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -181,13 +187,14 @@
 		</div>
 	</div>
 </section>
+<script src="js/lightbox.min.js"></script>
 <script>
 jQuery(document).ready(function ($) { 
 	//SET CONTENT HEIGHT HEIGHT SO SECTION IS 100VH (-80 ACCOUNTS FOR PADDING)//
 	$contentHeight = $(window).height()-134;
 	//CHECK WIDTH FUNCTION:SETS HEIGHT OF PORTFOLIO SLIDER//
 	function checkDimensions() {
-		if ($(window).width() >= 992 && $(window).height() >= 750) {
+		if ($(window).width() >= 975 && $(window).height() >= 750) {
 			$(".portfolio-item").height($contentHeight);
 			$("#content").height($contentHeight);
 		} else {
@@ -259,7 +266,7 @@ jQuery(document).ready(function ($) {
 		pager: false
 		});
 	}
-	if ($(window).width()>=992) {
+	if ($(window).width()>=975) {
 		createSlider();
 		active = true;
 	}
@@ -273,10 +280,10 @@ jQuery(document).ready(function ($) {
 	$(window).resize(function() {
 		$contentHeight = $(window).height()-134;
 		checkDimensions();
-		if ($(window).width()<=991 && active == true) {
+		if ($(window).width()<=974 && active == true) {
 			slider.destroySlider();
 			active = false;
-		} else if ($(window).width()>=992 && active == false) {
+		} else if ($(window).width()>=975 && active == false) {
 			createSlider();
 			active = true;
 		}
@@ -285,6 +292,15 @@ jQuery(document).ready(function ($) {
 	$(document).scroll(function(){
 		checkSpecs();
 	});
+	
+	//ASSIGN CLASSES TO LIGHTBOX ELEMENTS//
+	$("a").each(function() {
+
+		if (this.className.indexOf("lb") > -1) {
+			$(this).addClass("box");
+		}
+	});
+	
 });
 </script>
 </body>

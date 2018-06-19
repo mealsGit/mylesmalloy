@@ -36,7 +36,7 @@ h2 {
 	border-bottom:1px solid #111;
 	width:100%;
 }
-a, .btn {
+a:not(.box), .btn {
 	background-color:#ff1f8a!important;
 	color:#111!important;
 	padding:2px;
@@ -44,7 +44,7 @@ a, .btn {
 	border-radius:0;
 	border:none;
 }
-a:hover {
+a:not(.box):hover{
 	background-color:rgb(216, 255, 10)!important;
 	text-decoration:none!important;
 }
