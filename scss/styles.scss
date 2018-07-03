@@ -159,11 +159,17 @@ section#specs {
 }
 section#portfolio {
 	position:relative;
+	.portfolio-item {
+		height:100%!important;
+	}
 	.portfolio-item:not(:last-of-type) {
 		margin-bottom:40px;
 	}	
 	.portfolio-item .center {
 		margin:0 auto;
+	}
+	#portfolio-wrap {
+		height:100%;
 	}
 }
 #hamburger, #closex {
@@ -249,7 +255,6 @@ section#portfolio {
 		margin-bottom:0;
 	}
 }
-
 @media all and (min-height:750px) and (min-width:992px) {
 	section:not(.slider) {
 		height:100vh;
@@ -266,6 +271,12 @@ section#portfolio {
 		top:40px;
 		left:0;
 		right:0;
+	}
+	.bx-viewport {
+		height:100%!important;
+	}
+	.portfolio-item {
+		padding-bottom:40px;
 	}
 }
 
