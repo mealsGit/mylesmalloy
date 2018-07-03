@@ -190,6 +190,9 @@ section#portfolio {
 	.portfolio-item:not(:last-of-type) {
 		margin-bottom:20px!important;
 	}
+	.lb-nav a.lb-prev, .lb-nav a.lb-next {
+		opacity:1!important;
+	}
 }
 
 @media all and (min-width:768px) {

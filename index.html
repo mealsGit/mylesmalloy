@@ -14,6 +14,7 @@
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <!--LIGHTBOX-->
 <link href="css/lightbox.css" rel="stylesheet">
+<script src="js/lightbox.min.js"></script>
 <!--CUSTOM CSS-->
 <link rel="stylesheet" href="css/styles.css">
 
@@ -187,7 +188,6 @@
 		</div>
 	</div>
 </section>
-<script src="js/lightbox.min.js"></script>
 <script>
 jQuery(document).ready(function ($) { 
 	//SET CONTENT HEIGHT HEIGHT SO SECTION IS 100VH (-80 ACCOUNTS FOR PADDING)//
@@ -263,6 +263,7 @@ jQuery(document).ready(function ($) {
 	function createSlider() {
 		slider = $('.slider').bxSlider({
 		hideControlOnEnd: true,
+		infiniteLoop: false,
 		pager: false
 		});
 	}
@@ -295,7 +296,6 @@ jQuery(document).ready(function ($) {
 	
 	//ASSIGN CLASSES TO LIGHTBOX ELEMENTS//
 	$("a").each(function() {
-
 		if (this.className.indexOf("lb") > -1) {
 			$(this).addClass("box");
 		}
