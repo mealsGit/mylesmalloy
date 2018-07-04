@@ -8,6 +8,10 @@ $tertiary-purple : #b748ff;
 	box-sizing:border-box;
 	font-family:Arial, sans-serif;
 }
+body {
+	width:100%;
+	overflow-x:hidden;
+}
 h2, h3 {
 	margin:0 0 20px 0;
 }
