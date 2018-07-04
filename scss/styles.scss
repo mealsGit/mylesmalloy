@@ -69,6 +69,7 @@ nav {
 	transition:.8s;
 	ul {
 		text-align:center;
+		list-style-type:none;
 		li {
 			font-size:50px;
 		}
@@ -159,9 +160,6 @@ section#specs {
 }
 section#portfolio {
 	position:relative;
-	.portfolio-item {
-		height:100%!important;
-	}
 	.portfolio-item:not(:last-of-type) {
 		margin-bottom:40px;
 	}	
@@ -194,7 +192,7 @@ section#portfolio {
 		margin-top:0;
 	}
 	p {
-		font-size:15px;
+		font-size:16px;
 	}
 	section#specs img {
 		max-width:125px;
@@ -221,7 +219,7 @@ section#portfolio {
 		font-size:25px;
 	}
 	p {
-		font-size:18px;
+		font-size:20px;
 	}
 	.padding {
 		padding:40px;
@@ -253,6 +251,11 @@ section#portfolio {
 	}
 	.portfolio-item:not(:last-of-type) {
 		margin-bottom:0;
+	}
+}
+@media all and (max-width: 991px) {
+	.portfolio-item {
+		height:100%!important;
 	}
 }
 @media all and (min-height:750px) and (min-width:992px) {
